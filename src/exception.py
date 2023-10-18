@@ -1,6 +1,7 @@
 import sys
-from src.logger import logging
-
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent.parent))
+from logger import logging
 #Research on custom exception handling......
 
 def error_message_detail(error,error_detail:sys):
